@@ -11,7 +11,19 @@
 DDFL allows your FiveM server to interact with the DataDog REST API through HTTP requests.
 This can be useful if you want to monitor your server, measure its growth or simply collect statistics.
 
-## Installation
+## Summaru
+
+1) [Credits](#credits)
+2) [Installation](#how-to-install)
+3) [Usage](#usage)
+4) [Queries](#queries)
+5) [To-do](#todo-list)
+
+## Credits
+
+DDFL by [Pablo Z.](https://github.com/PABLO-1610)
+
+## How to install
 
 To install this library, you just need to download it (or clone it) 
 and then add `ensure datadog-fivem` to your `server.cfg`.
@@ -33,6 +45,28 @@ To make queries, you must authenticate with an application key. Create your auth
 ## Queries
 
 Here are the current possible queries
+
+<hr/>
+
+### [Submit metric(s)](https://docs.datadoghq.com/fr/api/latest/metrics/#submit-metrics)
+#### Submit one metric
+**Requiered**:
+- `metricTable`
+```lua
+TriggerEvent("ddfl:submitMetric", "myApplication", function(success)
+    -- Code
+end, metricTable)
+```
+Example:
+```lua
+TriggerEvent("ddfl:submitMetric", "myApplication", function(success)
+    if (success) then
+        print("Metric submitted")
+    else
+        print("Metric failed to submit")
+    end
+end, { metric = "test.metric", type = "gauge", points = { { os.time(), 1.5 } }, tags = { "user:me", "test:ok" } })
+```
 
 <hr/>
 
@@ -77,4 +111,23 @@ end, metric_name)
 ```
 
 <hr/>
+
+### TODO List
+#### Done
+✅ • [Submit Metrics](https://docs.datadoghq.com/fr/api/latest/metrics/#submit-metrics)<br/>
+✅ • [Get active metrics](https://docs.datadoghq.com/fr/api/latest/metrics/#get-active-metrics-list)<br/>
+✅ • [Get metric metadata](https://docs.datadoghq.com/fr/api/latest/metrics/#get-metric-metadata)<br/>
+✅ • [Get metric tag configuration](https://docs.datadoghq.com/fr/api/latest/metrics/#list-tag-configuration-by-name)
+#### To do
+⌛ • [Create a tag configuration](https://docs.datadoghq.com/fr/api/latest/metrics/#create-a-tag-configuration)<br/>
+⌛ • [Edit metric metadata](https://docs.datadoghq.com/fr/api/latest/metrics/#edit-metric-metadata)<br/>
+⌛ • [Edit tag configuration](https://docs.datadoghq.com/fr/api/latest/metrics/#update-a-tag-configuration)<br/>
+⌛ • [Delete tag configuration](https://docs.datadoghq.com/fr/api/latest/metrics/#delete-a-tag-configuration)<br/>
+⌛ • [Search metrics](https://docs.datadoghq.com/fr/api/latest/metrics/#search-metrics)<br/>
+⌛ • [List tag configuration](https://docs.datadoghq.com/fr/api/latest/metrics/#list-tag-configurations)<br/>
+⌛ • [Get timeseries points](https://docs.datadoghq.com/fr/api/latest/metrics/#query-timeseries-points)<br/>
+⌛ • [List tags by metric name](https://docs.datadoghq.com/fr/api/latest/metrics/#list-tags-by-metric-name)<br/>
+⌛ • [List distinct metric volume by metric name](https://docs.datadoghq.com/fr/api/latest/metrics/#list-distinct-metric-volumes-by-metric-name)<br/>
+
+
                                                                                                                                
