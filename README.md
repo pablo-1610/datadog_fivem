@@ -65,6 +65,16 @@ end, metric_name)
 
 <hr/>
 
+### (⭐) [Get metric tag configuration](https://docs.datadoghq.com/fr/api/latest/metrics/#list-tag-configuration-by-name)
+**__Warning__**: only accessible for Metrics without Limits™ users
 
+**Requiered**:
+- `metric_name`
+```lua
+TriggerEvent("ddfl:getMetricTagConfiguration", "myApplication", function(data)
+    print(json.encode(data))
+end, metric_name)
+```
 
+<hr/>
                                                                                                                                
