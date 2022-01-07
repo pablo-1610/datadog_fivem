@@ -99,6 +99,9 @@ function MetricBuilder:validate()
     return (self.name ~= nil and self.points ~= nil and #self.points > 0)
 end
 
+---build
+---@return table
+---@public
 function MetricBuilder:build()
     if (not (self:validate())) then
         DataDogAPI:throw("Cannot build metric, invalid builder data")
@@ -112,4 +115,18 @@ function MetricBuilder:build()
     body.tags = self.tags
     body.type = self.type
     return body
+end
+
+---getMetricBuilderFromTableData
+---@param metricTable table
+---@return MetricBuilder
+---@public
+function MetricBuilder.getMetricBuilderFromTableData(metricTable)
+    local builder = MetricBuilder:new():setHost(metricTable.host)
+        :setInterval(metricTable.interval)
+        :setName(metricTable.metric)
+        :setPoints(metricTable.points)
+        :setTags(metricTable.tags)
+        :setType(metricTable.type)
+    return builder
 end

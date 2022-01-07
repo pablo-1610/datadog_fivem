@@ -16,7 +16,9 @@ server_scripts {
     -- Methods
     'src/api/get/*.lua',
     'src/api/post/*.lua',
-    'src/api/put/*.lua'
+    'src/api/put/*.lua',
+    -- Library
+    'src/lib/datadog.lua'
 }
 
 -- Example
