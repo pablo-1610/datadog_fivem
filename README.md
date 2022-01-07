@@ -14,14 +14,14 @@ This can be useful if you want to monitor your server, measure its growth or sim
 ## Summary
 
 1) [Credits](#credits)
-2) [Installation](#how-to-install)
-3) [Usage](#usage)
-4) [Queries](#queries)
-5) [To-do](#todo-list)
+3) [Installation](#how-to-install)
+4) [Usage](#usage)
+5) [Queries](#queries)
+6) [To-do](#todo-list)
 
 ## Credits
 
-DDFL by [Pablo Z.](https://github.com/PABLO-1610)
+DDFL by [Pablo Z.](https://github.com/PABLO-1610) ([Discord](https://discord.gg/Y9HJw4u6Hh))
 
 ## How to install
 
