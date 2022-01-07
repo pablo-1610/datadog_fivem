@@ -1,6 +1,5 @@
 <img align="right" src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/nekonenene/20170508/20170508180215.png" height="200" width="200">
 
-![GitHub labels](https://img.shields.io/github/labels/PABLO-1610/datadog-fivem/help-wanted)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/PABLO-1610/datadog-fivem)
 ![GitHub issues](https://img.shields.io/github/issues/PABLO-1610/datadog-fivem)
 ![Twitter Follow](https://img.shields.io/twitter/follow/Pablo1610_?style=social)
