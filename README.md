@@ -11,7 +11,7 @@
 DDFL allows your FiveM server to interact with the DataDog REST API through HTTP requests.
 This can be useful if you want to monitor your server, measure its growth or simply collect statistics.
 
-## Summaru
+## Summary
 
 1) [Credits](#credits)
 2) [Installation](#how-to-install)
