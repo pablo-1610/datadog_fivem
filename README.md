@@ -55,6 +55,8 @@ Here are the current possible queries
 #### Submit one metric
 **Requiered**:
 - `metricTable`
+
+**Usage**:
 ```lua
 TriggerEvent("ddfl:submitMetric", "myApplication", function(success)
     -- Code
@@ -80,6 +82,8 @@ end, { metric = "test.metric", type = "gauge", points = { { os.time(), 1.5 } }, 
 **Optional**:
 - `host`
 - `tag`
+
+**Usage**:
 ```lua
 TriggerEvent("ddfl:getActiveMetrics", "myApplication", function(data)
     local metrics = data.metrics
@@ -88,17 +92,21 @@ TriggerEvent("ddfl:getActiveMetrics", "myApplication", function(data)
     end
 end, from, host, tag)
 ```
+**Example**: WIP
 
 <hr/>
 
 ### [Get metric metadata](https://docs.datadoghq.com/fr/api/latest/metrics/#get-metric-metadata)
 **Requiered**:
 - `metric_name`
+
+**Usage**:
 ```lua
 TriggerEvent("ddfl:getMetricMetadata", "myApplication", function(data)
     print(json.encode(data))
 end, metric_name)
 ```
+**Example**: WIP
 
 <hr/>
 
@@ -107,11 +115,14 @@ end, metric_name)
 
 **Requiered**:
 - `metric_name`
+
+**Usage**:
 ```lua
 TriggerEvent("ddfl:getMetricTagConfiguration", "myApplication", function(data)
     print(json.encode(data))
 end, metric_name)
 ```
+**Example**: WIP
 
 <hr/>
 
