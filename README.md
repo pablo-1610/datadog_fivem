@@ -113,10 +113,10 @@ end, metric_name)
 
 ### TODO List
 #### Done
-✅ • [Submit Metrics](https://docs.datadoghq.com/fr/api/latest/metrics/#submit-metrics)<br/>
-✅ • [Get active metrics](https://docs.datadoghq.com/fr/api/latest/metrics/#get-active-metrics-list)<br/>
-✅ • [Get metric metadata](https://docs.datadoghq.com/fr/api/latest/metrics/#get-metric-metadata)<br/>
-✅ • [Get metric tag configuration](https://docs.datadoghq.com/fr/api/latest/metrics/#list-tag-configuration-by-name)
+✅ • [Submit Metrics](https://docs.datadoghq.com/fr/api/latest/metrics/#submit-metrics) ([usage](https://github.com/PABLO-1610/datadog-fivem#submit-metrics))<br/>
+✅ • [Get active metrics](https://docs.datadoghq.com/fr/api/latest/metrics/#get-active-metrics-list) ([usage](https://github.com/PABLO-1610/datadog-fivem/#get-active-metrics))<br/>
+✅ • [Get metric metadata](https://docs.datadoghq.com/fr/api/latest/metrics/#get-metric-metadata) ([usage](https://github.com/PABLO-1610/datadog-fivem/#get-metric-metadata))<br/>
+✅ • [Get metric tag configuration](https://docs.datadoghq.com/fr/api/latest/metrics/#list-tag-configuration-by-name) ([usage](https://github.com/PABLO-1610/datadog-fivem/#-get-metric-tag-configuration))
 #### To do
 ⌛ • [Create a tag configuration](https://docs.datadoghq.com/fr/api/latest/metrics/#create-a-tag-configuration)<br/>
 ⌛ • [Edit metric metadata](https://docs.datadoghq.com/fr/api/latest/metrics/#edit-metric-metadata)<br/>
