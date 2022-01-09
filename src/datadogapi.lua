@@ -99,7 +99,7 @@ end
 
 local defaultApiKey = GetConvar("datadog_api_key", "undefined")
 if (defaultApiKey == "undefined") then
-    DataDogAPI:log("No API key set. Please set the ^5datadog_api_key^7 convar or set the apiKey via ^5DataDogAPI:setApiKey(apiKey) ^7!")
+    DataDogAPI:log("No API key set. Please set the ^5datadog_api_key^7 convar or set the apiKey via the ^5ddfl:setApiKey ^7internal event !")
 else
     DataDogAPI:setApiKey(defaultApiKey)
 end
