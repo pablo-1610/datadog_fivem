@@ -31,15 +31,19 @@ If you want, you can define your API key directly using the convar `datadog_api_
 
 Otherwise, use the `ddfl:setApiKey` event by passing your API key as a parameter to the event.
 
+Usage: `TriggerEvent("ddfl:setApiKey", "yourApiKeyHere")`
+
 ## Usage
 
 To use DDFL, you must make sure that DDFL is started before any other script that will use it.
 
 To make queries, you must authenticate with an application key. Create your authorization with this line;
 
-`TriggerEvent('ddfl:setApplication', 'myApplicationName', 'myApplicationKey')`
+`TriggerEvent("ddfl:setApplication", "myApplicationName", "myApplicationKey")`
 
-`TriggerEvent('ddf:setApplication', 'myApplicationName', 'myApplicationKey', true)` (With logs)
+`TriggerEvent("ddf:setApplication", "myApplicationName", "myApplicationKey", true)` (With logs)
+
+You can put whatever you want for `myApplicationName`, it only serves to identify your application.
 
 ## Queries
 
