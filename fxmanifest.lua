@@ -22,7 +22,7 @@ server_scripts {
 }
 
 -- Example
-server_script 'src/example/datadogapi_example.lua'
+-- server_script 'src/example/datadogapi_example.lua'
 
 -- Testing
-server_script 'test/server.lua'
+-- server_script 'test/server.lua'
