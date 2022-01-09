@@ -30,6 +30,7 @@ end
 
 -- TODO : Does not work, need to investigate
 ---performSubmitMetrics
+---@deprecated
 ---@param consumer function
 ---@param metricBuilders table<MetricBuilder>
 ---@return void
@@ -44,7 +45,6 @@ function DataDogApplication:performSubmitMetrics(consumer, metricBuilders)
             metricBuilders[k] = v:build()
         end
         local payload = createSeriesPayload(metricBuilders)
-        print(payload)
         PerformHttpRequest(URL, function(code, data)
             self:trace("SubmitMetrics", URL, code, data)
             consumer(code == 202)
