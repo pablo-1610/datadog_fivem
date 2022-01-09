@@ -29,6 +29,8 @@ and then add `ensure datadog-fivem` to your `server.cfg`.
 
 If you want, you can define your API key directly using the convar `datadog_api_key`. 
 
+🌐 To obtain or generate an **API key**, [follow this link](https://app.datadoghq.com/organization-settings/api-keys)
+
 Otherwise, use the `ddfl:setApiKey` event by passing your API key as a parameter to the event.
 
 Usage: `TriggerEvent("ddfl:setApiKey", "yourApiKeyHere")`
@@ -36,6 +38,8 @@ Usage: `TriggerEvent("ddfl:setApiKey", "yourApiKeyHere")`
 ## Usage
 
 To use DDFL, you must make sure that DDFL is started before any other script that will use it.
+
+🌐 To obtain or generate an **application key**, [follow this link](https://app.datadoghq.com/organization-settings/application-keys)
 
 To make queries, you must authenticate with an application key. Create your authorization with this line;
 
