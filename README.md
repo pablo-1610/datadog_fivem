@@ -60,7 +60,7 @@ TriggerEvent("ddfl:submitMetric", "myApplication", function(success)
     -- Code
 end, metricTable)
 ```
-Example:
+**Example**:
 ```lua
 TriggerEvent("ddfl:submitMetric", "myApplication", function(success)
     if (success) then
