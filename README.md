@@ -52,7 +52,6 @@ Here are the current possible queries
 <hr/>
 
 ### [Submit metric(s)](https://docs.datadoghq.com/fr/api/latest/metrics/#submit-metrics)
-#### Submit one metric
 **Requiered**:
 - `metricTable`
 
